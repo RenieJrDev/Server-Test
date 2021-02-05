@@ -25,12 +25,12 @@ userRouter
     .get(async (req, res, next) => {
         const userList = []
         try {
-            if (req.query) {
-                const query = req.query
-                userList = await UserModel.find(query)
-            } else {
+            // if (req.query) {
+            //     const query = req.query
+            //     userList = await UserModel.find(query)
+            // } else {
                 userList = await UserModel.find()
-            }
+            // }
             res.send(userList)
         } catch (error) {
             console.log(error)
