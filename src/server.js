@@ -49,9 +49,7 @@ mongoose.
     })
     .then(
         server.listen(PORT, () => {
-            process.env.NODE_ENV === 'production'
-                ? console.log(`Server running on PORT : ${PORT}`)
-                : console.log(`Server running on : http://localhost:${PORT}`)
+        console.log(`Server running on PORT : ${PORT}`)
     })
     )
     .catch(err => console.log(err))
