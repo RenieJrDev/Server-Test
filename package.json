@@ -7,6 +7,9 @@
     "start": "node ./src/server.js",
     "dev": "nodemon -r dotenv/config ./src/server.js"
   },
+  "engines": {
+    "node":"15.14.2"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
